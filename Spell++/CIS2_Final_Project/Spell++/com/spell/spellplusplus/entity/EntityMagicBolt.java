@@ -51,7 +51,7 @@ public EntityMagicBolt(World par1World)
 		        int by = (int)posY;
 		        int bz = (int)posZ;
 		        worldObj.createExplosion(this, posX, posY, posZ, 2F, true);
-		        this.setDead();
+		 
 		    }
 		    @Override
 		    public void onUpdate()
