@@ -1,0 +1,16 @@
+[
+{
+  "modid": "spellplusplus",
+  "name": "Spell++",
+  "description": "Spells, spells, and more spells.",
+  "version": "1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Cory, Nick, Bobbi"],
+  "credits": "Me",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
