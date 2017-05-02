@@ -14,7 +14,9 @@ public class ModItems
     {
         itemCrystal.init();
         GameRegistry.registerItem(itemWoodStaff.WoodenStaff, "Wooden Staff");
-
+        GameRegistry.registerItem(itemStoneStaff.StoneStaff, "Stone Staff");
+        GameRegistry.registerItem(itemGoldStaff.GoldStaff, "Golden Staff");
+        GameRegistry.registerItem(itemIronStaff.IronStaff, "Iron Staff");
        
     }
 }

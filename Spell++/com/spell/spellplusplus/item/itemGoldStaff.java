@@ -23,24 +23,24 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
 
-public class itemWoodStaff extends Item{
-	public static final Item WoodenStaff= new itemWoodStaff();
+public class itemGoldStaff extends Item{
+	public static final Item GoldStaff= new itemGoldStaff();
     public static final String[] chargeStaffArray = new String[] {"chrg1","chrg2", "chrg3"};
     @SideOnly(Side.CLIENT)
     private IIcon[] iconArray;
 
    // public static final String[] bowPullIconNameArray = new String[] {"pulling_0", "pulling_1", "pulling_2"};
 
-	//WoodenStaff=new itemWoodStaff();
+	//GoldStaff=new itemGoldStaff();
 
 
-	public itemWoodStaff()
+	public itemGoldStaff()
     {       
 		this.setCreativeTab(CreativeTabs.tabCombat);
         this.setMaxStackSize(1);
         this.setMaxDamage(0);
-        this.setTextureName(SpellPlusPlus.MODID + ":wandWood");
-        this.setUnlocalizedName("Wooden Staff");
+        this.setTextureName(SpellPlusPlus.MODID + ":wandGold");
+        this.setUnlocalizedName("Golden Staff");
     }
 
     @Override
@@ -81,7 +81,7 @@ public class itemWoodStaff extends Item{
             return;
         }
         if (j>=25){
-        	world.spawnEntityInWorld(new EntityMagicBolt(world, player));
+        	world.spawnEntityInWorld(new EntityGoldenBolt(world, player));
         	itemStack.damageItem(1,player);
         }
         
